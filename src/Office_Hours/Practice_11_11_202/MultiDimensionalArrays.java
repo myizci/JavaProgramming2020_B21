@@ -21,5 +21,19 @@ public class MultiDimensionalArrays {
                 System.out.println(eachElement);
             }
         }
+
+
+        System.out.println("=================");
+
+        for(int[] each1DArray: arr2D){
+
+            for(int eachElement:each1DArray){
+
+                if(eachElement%2!=0){
+
+                    System.out.println(eachElement);
+                }
+            }
+        }
     }
 }
