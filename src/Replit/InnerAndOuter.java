@@ -8,6 +8,8 @@ public class InnerAndOuter {
 
         boolean result = true;
         int[] count = new int[inner.length];
+
+
         for (int i = 0; i < inner.length; i++) {
 
             for (int j = 0; j < outer.length; j++) {
