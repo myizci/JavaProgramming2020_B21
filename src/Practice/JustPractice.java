@@ -1,14 +1,18 @@
 package Practice;
 
+
 public class JustPractice {
-    public static void main(String[] args) {
-        String s3 = "yes";
-        boolean java = Boolean.parseBoolean(s3); // none
-        Boolean r2 = Boolean.parseBoolean(s3);  // auto boxing
-        System.out.println(java); // default value of boolean is false
-        System.out.println(r2);
+    private String name = "Static class";
+    public static void first() { }
 
+    public static void second() { }
 
+  public void third() { System.out.println(name); }
 
+    public static void main(String args[]) {
+        first();
+        second();
+     // third(); // DOES NOT COMPILE
+        new JustPractice().third();  //  this will work
     }
 }
