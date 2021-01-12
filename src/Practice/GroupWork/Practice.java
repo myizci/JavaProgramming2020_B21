@@ -1,36 +1,27 @@
 package Practice.GroupWork;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+class Practice {
 
-public class Practice {
+protected void method(){
+    System.out.println("A");
+}
+private void method(int a){
+    System.out.println("B");
+}
 
-    public static void main(String[] args) {
-        LocalDate date = LocalDate.of(2018,1,10);
-        LocalTime time = LocalTime.of(14,42);
-
-        LocalDateTime dateTime = LocalDateTime.of(date,time);
-
-        System.out.println(dateTime);
-
-
-
-        }
-
-
-        public static boolean g(boolean k){
-
-       if(k){
-           return k;
-       }else if(!k){
-           return !k;
-       }
-
-       return false;
-        }
 
     }
 
+class test extends Practice{
+    public void method (int a){
+        System.out.println("C");
 
+
+    }
+
+    public static void main(String[] args) {
+        test obj = new test();
+        obj.method();
+    }
+}
 
