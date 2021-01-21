@@ -9,5 +9,5 @@ public class Mercedes extends Car {
     public void start() {
         System.out.println(brand  +" "+ model+" is starting with push button");
     }
-    
+
 }
