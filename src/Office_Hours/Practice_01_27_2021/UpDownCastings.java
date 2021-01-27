@@ -1,6 +1,8 @@
 package Office_Hours.Practice_01_27_2021;
 
 import day45_Exceptions.PhoneTask.*;
+import day49_Abstraction.ShapeTask.Cube;
+import day49_Abstraction.ShapeTask.Volume;
 
 public class UpDownCastings {
     public static void main(String[] args) {
@@ -46,8 +48,20 @@ public class UpDownCastings {
         ((Samsung) phone4).freeze();
 
 
+        System.out.println("=======================================");
 
 
+        //Volume s1 = new Circle(3);  //compile error, no relation between circle and volume
+
+        Volume v = new Cube(3); // cube and volume has a relation, upcasting
+
+       //double area = ((Cylinder)v).area();
+
+      //  System.out.println(area);   // No relation between cube and cylinder
+
+        double area2= ((Cube)v).area();
+        System.out.println(area2);
+        System.out.println(((Cube) v).volume());
 
 
     }
