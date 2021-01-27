@@ -2,11 +2,25 @@ package Office_Hours.Practice_01_27_2021;
 
 import day45_Exceptions.PhoneTask.*;
 
+
 public class PolymorphismPractice {
     public static void main(String[] args) {
 
         Phone phone = new Iphone("12",1000);
 
+        // HuaWei phone2 =  new Iphone("12", 1000);
+        Phone phone2 = new Samsung("S20", "South Korea",300);
+        Phone phone3 = new Nokia("N95", 300);
+        Phone phone4 = new HuaWei("..", "PRC",250);
+
+
+        // verify phone3 is Huawei: instanceof
+        boolean isHuawei = phone3 instanceof HuaWei;
+
+        // verify phone2 is samsung
+        boolean isSamsung = phone2 instanceof Samsung;
+
+        System.out.println("===================================================");
 
         Phone[] phones ={
                 new Iphone("12 pro", 1100),
